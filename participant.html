@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Participant!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+
+        // Check for click events on the navbar burger icon
+        $(".navbar-burger").click(function() {
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Navigation start bar ====================================================================================================================-->
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation"  style="padding-top:10px;padding-bottom:10px;">
+      <div class="navbar-brand">
+        <div class="navbar-item" href="home.html">
+          <img src="a.png" class="image is-32x32" style="padding-right:10px;">
+          <h1 class="is-center">Event Managers</h1>
+        </div>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasic" class="navbar-menu" style="padding-left:30px;padding-right:50px;">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+          <a class="navbar-item">
+            About us
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Event
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                Search
+              </a>
+              <a class="navbar-item">
+                Create
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                Report an issue
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Navigation bar Right side=================================================================================================================-->
+        <div class="navbar-end">
+          <div class="buttons">
+            <a href="" class="button is-primary">Sign Up</a>
+            <a href="" class="button is-light">Login</a>
+          </div>
+        </div>
+        <!-- Navigation bar Right side End=================================================================================================================-->
+      </div>
+    </nav>
+    <!-- Navigation bar End=================================================================================================================-->
+    <section class="hero is-medium is-warning" style="margin-top:70px;">
+      <div class="hero-body">
+        <div class="container" style="">
+          <div class="level-item" >
+            <h1 class="title">Participant's</h1>
+          </div>
+          <!--box starts ===================================================================================================-->
+          <div class="level-item" style="margin-top:40px;">
+            <table class="table is-striped is-hoverable is-fullwidth is-bordered">
+              <thead>
+                <tr>
+                  <th><abbr title="Number">No.</abbr></th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone Number</th>
+                  <th>Gender</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>1</th>
+                  <td>Abhay</td>
+                  <td>asdasd@gmail.com</td>
+                  <td>123456789</td>
+                  <td>Male</td>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <td>Abcc</td>
+                  <td>asdasd@gmail.com</td>
+                  <td>123456789</td>
+                  <td>Male</td>
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <td>parm</td>
+                  <td>asdasd@gmail.com</td>
+                  <td>123456789</td>
+                  <td>Male</td>
+                </tr>
+                <tr class="is-selected">
+                  <th>4</th>
+                  <td>Honey</td>
+                  <td>asdasd@gmail.com</td>
+                  <td>123456789</td>
+                  <td>Male</td>
+                </tr>
+                <tr>
+                  <th>5</th>
+                  <td>Ankit</td>
+                  <td>asdasd@gmail.com</td>
+                  <td>123456789</td>
+                  <td>Male</td>
+                </tr>
+                <tr>
+                  <th>6</th>
+                  <td>sarthak</td>
+                  <td>asdasd@gmail.com</td>
+                  <td>123456789</td>
+                  <td>Male</td>
+                </tr>
+                <tr>
+                  <th>7</th>
+                  <td>Asnjnd</td>
+                  <td>asdasd@gmail.com</td>
+                  <td>123456789</td>
+                  <td>Male</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th><abbr title="Number">No.</abbr></th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Phone Number</th>
+                  <th>Gender</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <!--box ends ===================================================================================================-->
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

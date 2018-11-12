@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+
+        // Check for click events on the navbar burger icon
+        $(".navbar-burger").click(function() {
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Navigation start bar ====================================================================================================================-->
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation"  style="padding-top:10px;padding-bottom:10px;">
+      <div class="navbar-brand">
+        <div class="navbar-item" href="home.html">
+          <img src="a.png" class="image is-32x32" style="padding-right:10px;">
+          <h1 class="is-center">Event Managers</h1>
+        </div>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasic" class="navbar-menu" style="padding-left:30px;padding-right:50px;">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+          <a class="navbar-item">
+            About us
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Event
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                Search
+              </a>
+              <a class="navbar-item">
+                Create
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                Report an issue
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Navigation bar Right side=================================================================================================================-->
+        <div class="navbar-end">
+          <div class="buttons">
+            <a href="" class="button is-primary">Sign Up</a>
+            <a href="" class="button is-light">Login</a>
+          </div>
+        </div>
+        <!-- Navigation bar Right side End=================================================================================================================-->
+      </div>
+    </nav>
+    <!-- Navigation bar End=================================================================================================================-->
+    <section class="hero is-medium is-warning" style="margin-top:70px;">
+      <div class="hero-body">
+        <div class="container" style="">
+          <div class="level-item" >
+            <div class="field has-addons">
+              <div class="control has-icons-right">
+                <input class="input" type="text" name="" value="Search">
+                <span class="icon is-medium is-right">
+                  <i class="fas fa-search"></i>
+                </span>
+              </div>
+              <div class="control">
+                <a href="#" class="button is-info">Search</a>
+              </div>
+            </div>
+          </div>
+          <!--box starts ===================================================================================================-->
+          <div class="level-item" style="margin-top:20px;">
+            <table class="table is-striped is-hoverable is-fullwidth is-bordered">
+              <thead>
+                <tr>
+                  <th><abbr title="Number">No.</abbr></th>
+                  <th>Event Name</th>
+                  <th>Place</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>1</th>
+                  <td>Basketball tournament</td>
+                  <td>chitkara university,baddi</td>
+                  <td>21-9-2018</td>
+                  <td>9:00 am</td>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <td>HACKATHON</td>
+                  <td>chitkara university,baddi</td>
+                  <td>2-10-2018</td>
+                  <td>11:00 am</td>
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <td>Tennis tournament</td>
+                  <td>chitkara university,baddi</td>
+                  <td>2-10-2018</td>
+                  <td>11:00 am</td>
+                </tr>
+                <tr class="is-selected">
+                  <th>4</th>
+                  <td>Basketball tournament</td>
+                  <td>chitkara university,baddi</td>
+                  <td>21-9-2018</td>
+                  <td>9:00 am</td>
+                </tr>
+                <tr>
+                  <th>5</th>
+                  <td>HACKATHON</td>
+                  <td>chitkara university,baddi</td>
+                  <td>2-10-2018</td>
+                  <td>11:00 am</td>
+                </tr>
+                <tr>
+                  <th>6</th>
+                  <td>Tennis tournament</td>
+                  <td>chitkara university,baddi</td>
+                  <td>2-10-2018</td>
+                  <td>11:00 am</td>
+                </tr>
+                <tr>
+                  <th>7</th>
+                  <td>Badminton tournament</td>
+                  <td>chitkara university,baddi</td>
+                  <td>2-10-2018</td>
+                  <td>11:00 am</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th><abbr title="Number">No.</abbr></th>
+                  <th>Event Name</th>
+                  <th>Place</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <!--box ends ===================================================================================================-->
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
